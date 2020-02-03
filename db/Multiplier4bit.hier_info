@@ -1,0 +1,191 @@
+|multiplier4bit
+A[0] => AB0.IN0
+A[0] => AB1[0].IN0
+A[0] => AB2[0].IN0
+A[0] => AB3[0].IN0
+A[1] => AB0[1].IN0
+A[1] => AB1[1].IN0
+A[1] => AB2[1].IN0
+A[1] => AB3[1].IN0
+A[2] => AB0[2].IN0
+A[2] => AB1[2].IN0
+A[2] => AB2[2].IN0
+A[2] => AB3[2].IN0
+A[3] => AB0[3].IN0
+A[3] => AB1[3].IN0
+A[3] => AB2[3].IN0
+A[3] => AB3[3].IN0
+B[0] => AB0.IN1
+B[0] => AB0[1].IN1
+B[0] => AB0[2].IN1
+B[0] => AB0[3].IN1
+B[1] => AB1[0].IN1
+B[1] => AB1[1].IN1
+B[1] => AB1[2].IN1
+B[1] => AB1[3].IN1
+B[2] => AB2[0].IN1
+B[2] => AB2[1].IN1
+B[2] => AB2[2].IN1
+B[2] => AB2[3].IN1
+B[3] => AB3[0].IN1
+B[3] => AB3[1].IN1
+B[3] => AB3[2].IN1
+B[3] => AB3[3].IN1
+S[0] << AB0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] << half_adder_vhdl_code:HA1.S
+S[2] << half_adder_vhdl_code:HA3.S
+S[3] << half_adder_vhdl_code:HA4.S
+S[4] << full_adder_vhdl_code:FA6.S
+S[5] << full_adder_vhdl_code:FA7.S
+S[6] << full_adder_vhdl_code:FA8.S
+S[7] << full_adder_vhdl_code:FA8.Cout
+
+
+|multiplier4bit|full_adder_vhdl_code:FA1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA5
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA6
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA7
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|full_adder_vhdl_code:FA8
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|half_adder_vhdl_code:HA1
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|half_adder_vhdl_code:HA2
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|half_adder_vhdl_code:HA3
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplier4bit|half_adder_vhdl_code:HA4
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,29 @@
+LIBRARY ieee;
+    USE ieee.std_logic_1164.ALL;
+    USE ieee.std_logic_unsigned.all ; 
+    USE ieee.std_logic_arith.all ;
+    use IEEE.std_logic_textio.all;
+
+LIBRARY std;
+    USE std.textio.all;
+
+ENTITY SPS IS
+
+   PORT (
+        
+  -- //////////// CLOCK //////////
+   CLOCK_50	: IN STD_LOGIC;
+
+--	//////////// LED //////////
+	LED		: OUT STD_LOGIC_VECTOR(7 downto 0);
+
+--	//////////// KEY //////////
+	-- KEY		: IN STD_LOGIC_VECTOR(1 downto 0);
+
+
+--	////////////  GPIO Header //////////
+	-- GPIO_2		: INOUT STD_LOGIC_VECTOR(4 downto 0)
+);
+
+
+END SPS;
