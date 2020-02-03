@@ -4,7 +4,7 @@ A 4bit Multiplier in VHDL
 
 ## Information
 
-This is a VHDL project for DSD-I1* a Cyclone IV FPGA built in Quartus 18.1 to build a 2 x 4bit number multiplier using Full Adders and Half Adders and is based in the example of the book 
+This is a VHDL project for DSD-I1* a Cyclone IV FPGA built in Quartus 18.1 to build a 2 x 4bit number multiplier using Full Adders and Half Adders.
 
 **Diagram**:  
 ![Diagram](./Multiplier4bit.jpg)
